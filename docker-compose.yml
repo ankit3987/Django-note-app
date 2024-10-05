@@ -1,6 +1,7 @@
 version : "3.3"
 services :
   web :
-     image: "lakshya545/my-notes-django"
+     build: .
+     #image: "lakshya545/my-notes-django"
      ports :
          - "8000:8000"
