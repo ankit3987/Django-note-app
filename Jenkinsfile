@@ -48,7 +48,8 @@ pipeline {
         stage("Deploy"){
             steps {
                 echo "deploing the container"
-                sh "docker run -d -p 8000:8000 ${env.dockerHubUser}/my-notes"
+                //sh "docker run -d -p 8000:8000 ${env.dockerHubUser}/my-notes"
+                sh "docker compose down && docker compose up -d"
             }
             
         }
