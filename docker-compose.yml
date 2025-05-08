@@ -1,8 +1,8 @@
 version: "3.3"
 services:
   web:
-    image: "ankitrawat3987/notes-app:latest"
-     #build:
-     #  context: .
+    #image: "ankitrawat3987/notes-app:latest"
+     build:
+       context: .
      ports:
          - "8000:8000"
